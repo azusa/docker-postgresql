@@ -1,8 +1,8 @@
 FROM ubuntu:14.04
 MAINTAINER Ben Firshman "ben@orchardup.com"
 
-RUN locale-gen en_US.UTF-8
-RUN update-locale LANG=en_US.UTF-8
+RUN locale-gen ja_JP.UTF-8
+RUN update-locale LANG=ja_JP.UTF-8
 
 RUN apt-get -qq update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q postgresql-9.3 postgresql-contrib-9.3 postgresql-9.3-postgis-2.1 libpq-dev sudo
 
