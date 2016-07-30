@@ -12,7 +12,7 @@ POSTGRESQL_BIN=${POSTGRESQL_BIN:-"/usr/lib/postgresql/9.3/bin/postgres"}
 POSTGRESQL_CONFIG_FILE=/etc/postgresql/9.3/main/postgresql.conf
 POSTGRESQL_DATA=/var/lib/postgresql/9.3/main
 
-POSTGRESQL_SINGLE="sudo -u postgres $POSTGRESQL_BIN --single --config-file=$POSTGRESQL_CONFIG_FILE"
+POSTGRESQL_SINGLE="sudo -u postgres /usr/lib/postgresql/9.3/bin/postgres --single --config-file=$POSTGRESQL_CONFIG_FILE"
 
 if [ ! -d $POSTGRESQL_DATA ]; then
     mkdir -p $POSTGRESQL_DATA
