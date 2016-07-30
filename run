@@ -8,7 +8,7 @@ POSTGRESQL_INIT_OPTION=${POSTGRESQL_INIT_OPTION:-""}
 POSTGRESQL_OPTION=${POSTGRESQL_OPTION:-""}
 POSTGRESQL_TEMPLATE=${POSTGRESQL_TEMPLATE:-"DEFAULT"}
 
-POSTGRESQL_BIN=/usr/lib/postgresql/9.3/bin/postgres
+POSTGRESQL_BIN=${POSTGRESQL_BIN:-"/usr/lib/postgresql/9.3/bin/postgres"}
 POSTGRESQL_CONFIG_FILE=/etc/postgresql/9.3/main/postgresql.conf
 POSTGRESQL_DATA=/var/lib/postgresql/9.3/main
 
